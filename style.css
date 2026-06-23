@@ -708,11 +708,11 @@ h4 {
 
 @media (max-width:600px) {
 
-  .tdy-forecast{
+  .lower-tdy-forecast{
     overflow-x: scroll;
   }
 
-  .tdy-forecast::-webkit-scrollbar{
+  .lower-tdy-forecast::-webkit-scrollbar{
     display: none;
   }
 
