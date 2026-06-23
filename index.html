@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-weather</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/3c/c3/79/3cc379679b4088a3384a5b32fe3d270e.jpg"
+        type="image/x-icon">
+
+    <!-- cdn for rmeix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <main>
+
+        <!-- overlays -->
+        <section class="search-overlay">
+
+            <i class="ri-close-circle-fill close-icon"></i>
+
+            <div class="searchbox">
+                <input type="text" placeholder="Search Here" class="search-input">
+
+                <button class="search-btn">search</button>
+
+                <div class="suggestions">
+
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+
+        <nav>
+            <div class="logo-name">
+                <img src="https://i.pinimg.com/736x/3c/c3/79/3cc379679b4088a3384a5b32fe3d270e.jpg" alt="">
+
+                <h2>web-weather</h2>
+            </div>
+
+            <i class="ri-search-line search-icon"></i>
+        </nav>
+
+        <!-- contains all the weather data -->
+        <div class="weather-box">
+
+            <i class="ri-menu-fill menu"></i>
+            <div class="left-weather">
+
+                <!-- used for mobile responsive -->
+                <i class="ri-close-line cross"></i>
+
+                <aside class="forecast">
+                    <h2>7-days forecast</h2>
+
+                    <div class="forecastbox">
+
+                    </div>
+                </aside>
+
+                <section class="day-time">
+
+                    <!-- day and date -->
+                    <h2 class="inner-day-time day-date">...</h2>
+
+                    <!-- time -->
+                    <h3 class="inner-day-time time">...</h3>
+
+                </section>
+            </div>
+
+            <div class="right-weather">
+                <section class="main-weather">
+                    <div class="main-weather-left">
+                        <h1 id="main-weather-left-cityName">...</h1>
+                        <p id="caption">...</p>
+
+                        <h1 id="data-deg">...</h1>
+                    </div>
+
+                    <div class="main-weather-right">
+                        <img src="" id="main-weather-right-img" alt="">
+                    </div>
+                </section>
+
+                <section class="tdy-forecast">
+                    <h5>today's forecast</h5>
+
+                    <div class="lower-tdy-forecast">
+                    </div>
+                </section>
+
+                <section class="values">
+
+                    <div class="ech-value">
+                        <div class="top" id="0">
+                            <i class="ri-temp-hot-line temp"></i>
+                            <h2>Real feel</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+                    <div class="ech-value" id="1">
+                        <div class="top">
+                            <i class="ri-windy-line"></i>
+                            <h2>wind</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+                    <div class="ech-value" id="2">
+                        <div class="top">
+                            <i class="ri-compass-2-line"></i>
+                            <h2>wind degree</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+                    <div class="ech-value" id="3">
+                        <div class="top">
+                            <i class="ri-water-percent-line"></i>
+                            <h2>chances of rain</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+                    <div class="ech-value" id="4">
+                        <div class="top">
+                            <i class="ri-drop-line"></i>
+                            <h2>dew point</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+                    <div class="ech-value">
+                        <div class="top" id="5">
+                            <i class="ri-cloudy-fill"></i>
+                            <h2>clouds</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+                    <div class="ech-value">
+                        <div class="top">
+                            <i class="ri-tailwind-css-fill"></i>
+                            <h2>gust speed</h2>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="bottom-weather-value"></h2>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="scipt.js"></script>
+</body>
+
+</html>
