@@ -23,7 +23,6 @@ let forecastbox = document.querySelector(".forecastbox");
 // this is for responsive only
 let cross = document.querySelector(".cross");
 let menu = document.querySelector(".menu");
-let phase = "hidden";
 let left_weather_box = document.querySelector(".left-weather");
 
 // functions
@@ -307,7 +306,6 @@ search_overlay.addEventListener("click", (e) => {
 });
 
 menu.addEventListener("click", (e) => {
-  phase = "visible";
   menu.style.display = "none";
   left_weather_box.style.width = `300px`;
   left_weather_box.style.display = "block";
@@ -315,7 +313,6 @@ menu.addEventListener("click", (e) => {
 });
 
 cross.addEventListener("click", (e) => {
-  phase = "hidden";
   menu.style.display = "block";
   left_weather_box.style.width = `0px`;
   left_weather_box.style.display = "none";
