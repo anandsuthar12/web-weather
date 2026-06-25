@@ -78,7 +78,6 @@ main {
   gap: var(--gutter-md);
 }
 
-/* ── NAV ── */
 nav {
   width: 100%;
   height: 60px;
@@ -139,7 +138,6 @@ nav > i:active {
   scale: 0.9;
 }
 
-/* ── SEARCH OVERLAY ── */
 section.search-overlay {
   z-index: 100;
   width: 100%;
@@ -304,7 +302,6 @@ section.search-overlay {
   margin-left: -10px;
 }
 
-/* ── WEATHER BOX ── */
 .weather-box {
   min-height: 0;
   flex-grow: 1;
@@ -477,15 +474,16 @@ section.search-overlay {
 
 /* ── RIGHT PANEL ── */
 .right-weather {
-  padding: var(--padding-sm) 0;
   flex-grow: 1;
   min-width: 0;
   border-radius: var(--radius-sm);
-  display: grid;
-  grid-template-rows: 35% 30% 35%;
-  grid-template-columns: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: var(--gutter-sm);
-  padding: var(--padding-sm);
+
   overflow: hidden;
 }
 
@@ -583,18 +581,23 @@ section.search-overlay {
   min-height: 0;
   background-color: transparent;
   border-radius: var(--radius-sm);
+
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 100%;
+
+  /* display: flex; */
+
   gap: var(--gutter-sm);
 }
 
 .ech-tdy-forecast {
-  width: 100%;
   height: 100%;
+  width: 100%;
   border-radius: var(--radius-sm);
   padding: var(--padding-sm);
   background-color: #121921;
+  /* background-color: hotpink; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -692,7 +695,7 @@ section.search-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 280px;
+    width: 280px !important;
     height: 100%;
     z-index: 200;
     background-color: #0d1117;
@@ -807,5 +810,13 @@ section.search-overlay {
 
   .top > h2 {
     font-size: 9px;
+  }
+
+  .left-weather {
+    width: 100% !important;
+  }
+
+  .ech-forecast > p {
+    display: none !important;
   }
 }
