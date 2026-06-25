@@ -247,7 +247,7 @@ section.search-overlay {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: var(--gutter-sm);
+  gap:var(--gutter-sm);
   overflow-y: scroll;
   font-family:
     system-ui,

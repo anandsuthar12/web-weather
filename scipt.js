@@ -100,7 +100,7 @@ function select_cities(dets) {
     country.cities.forEach((city) => {
       if (city.toLowerCase().startsWith(dets.toLowerCase())) {
         similar_cities.push({
-          city,
+          city:city,
           country: country.country,
         });
       }
@@ -108,8 +108,10 @@ function select_cities(dets) {
   });
 
   if (similar_cities.length === 0) {
-    suggestions.innerHTML = "Sorry, city not found";
+    suggestions.style.display='none';
     return;
+  }else{
+    suggestions.style.display='flex'
   }
 
   render_suggestions(similar_cities);
