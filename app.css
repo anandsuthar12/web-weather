@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
 }
 
 html {
@@ -11,7 +10,6 @@ html {
   height: 100%;
   font-size: 16px;
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 :root {
@@ -61,22 +59,25 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
-  overflow: hidden;
 }
 
 main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height:auto;
   max-width: 1600px;
   padding: var(--padding-md);
-  /* background-color: black; */
-  background-color: red;
+  background-color: black;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
   gap: var(--gutter-md);
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 nav {
@@ -730,9 +731,9 @@ section.search-overlay {
     gap: var(--gutter-sm);
   }
 
-  .weather-box {
+  /* .weather-box {
     flex-direction: column;
-  }
+  } */
 
   .right-weather {
     flex-grow: 1;
