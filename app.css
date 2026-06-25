@@ -285,6 +285,10 @@ section.search-overlay {
     scale 0.15s linear;
 }
 
+.left-suggestion,.search-suggestion,.left-suggestion>h2,.ech-suggestion>h5{
+  pointer-events: none;
+}
+
 .ech-suggestion:hover {
   background-color: rgba(0, 0, 0, 0.407);
   scale: 1.02;
@@ -730,10 +734,6 @@ section.search-overlay {
     padding: var(--padding-sm);
     gap: var(--gutter-sm);
   }
-
-  /* .weather-box {
-    flex-direction: column;
-  } */
 
   .right-weather {
     flex-grow: 1;
