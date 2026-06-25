@@ -69,7 +69,8 @@ main {
   height: 100vh;
   max-width: 1600px;
   padding: var(--padding-md);
-  background-color: black;
+  /* background-color: black; */
+  background-color: red;
   position: relative;
   overflow: hidden;
 
@@ -420,12 +421,12 @@ section.search-overlay {
 }
 
 .ech-forecast > p {
-  font-size: 10px;
+  font-size: 7px;
   color: skyblue;
 }
 
 .ech-forecast > img {
-  height: 80%;
+  height: 60%;
   aspect-ratio: 1;
 }
 
@@ -813,7 +814,7 @@ section.search-overlay {
   }
 
   .left-weather {
-    width: 100% !important;
+    width: 80% !important;
   }
 
   .ech-forecast > p {
